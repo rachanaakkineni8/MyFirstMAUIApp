@@ -66,10 +66,13 @@
 	  <Compile Update="MainPageOld.xaml.cs">
 	    <DependentUpon>MainPageOld.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Resources\Styles\ButtonStyles.xaml.cs">
+	    <DependentUpon>ButtonStyles.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Resources\Styles\Button.xaml">
+	  <MauiXaml Update="Resources\Styles\ButtonStyles.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\MainPage.xaml">

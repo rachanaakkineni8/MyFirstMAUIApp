@@ -1,8 +1,8 @@
 namespace MyFirstMAUIApp.Resources.Styles;
 
-public partial class Button : ResourceDictionary
+public partial class ButtonStyles : ResourceDictionary
 {
-	public Button()
+	public ButtonStyles()
 	{
 		InitializeComponent();
 	}

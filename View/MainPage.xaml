@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMAUIApp.View.MainPage"
              Title="{Binding Title}">
+    
     <Grid Padding = "16,24,16,16"
         RowSpacing = "6"
         ColumnSpacing="12">
@@ -28,22 +29,27 @@
     <Button Grid.Row="0"
             Grid.Column ="0"
             Text="Button 0, 0"
-            Style="(StaticResource TitleButton)" />
+            Style="{StaticResource TitleButton}" />
+        
     <Button Grid.Row="0"
         Grid.Column ="1"
         Text="Button 0, 1"
-        Style="(StaticResource TitleButton)" />
-    <Button Grid.Row="1"
+            Style="{StaticResource TitleButton}" />
+
+        <Button Grid.Row="1"
         Grid.Column ="0"
         Text="Button 1, 0"
-        Style="(StaticResource TitleButton)" />
-    <Button Grid.Row="1"
+            Style="{StaticResource TitleButton}" />
+
+        <Button Grid.Row="1"
         Grid.Column ="1"
         Text="Button 1, 1"
-        Style="(StaticResource TitleButton)" />
-    <Button Grid.Row="2"
+            Style="{StaticResource TitleButton}" />
+
+        <Button Grid.Row="2"
         Grid.Column ="0"
         Text="Button 2, 0"
-        Style="(StaticResource TitleButton)" />
+            Style="{StaticResource TitleButton}" />
     </Grid>
+    
 </ContentPage>
