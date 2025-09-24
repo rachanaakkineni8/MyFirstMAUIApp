@@ -7,8 +7,9 @@
         <Setter Property = "Margin" Value = "12" />
         <Setter Property = "HeightRequest" Value = "50" />
         <Setter Property = "CornerRadius" Value = "20" />
-        <Setter Property = "BackgroundColor" Value = "#90EE90" />
-        <Setter Property = "TextColor" Value = "White" />
+        <Setter Property = "BackgroundColor" Value = "Green" />
+        <Setter Property = "TextColor" Value = "Black" />
+        <Setter Property = "FontAttributes" Value = "Bold" />
         <Setter Property = "HorizontalOptions" Value = "Fill" />
     </Style>
 

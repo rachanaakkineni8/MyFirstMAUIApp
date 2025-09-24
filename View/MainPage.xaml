@@ -5,8 +5,8 @@
              Title="{Binding Title}">
     
     <Grid Padding = "16,24,16,16"
-        RowSpacing = "6"
-        ColumnSpacing="12">
+          RowSpacing = "6"
+          ColumnSpacing="12">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -19,37 +19,31 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         
-        <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
-
-    <Button Grid.Row="0"
-            Grid.Column ="0"
-            Text="Button 0, 0"
-            Style="{StaticResource TitleButton}" />
+        <Button Grid.Row="0"
+                Grid.Column ="0"
+                Text="Layouts"
+                Style="{StaticResource TileButton}" />
         
-    <Button Grid.Row="0"
-        Grid.Column ="1"
-        Text="Button 0, 1"
-            Style="{StaticResource TitleButton}" />
+        <Button Grid.Row="0"
+            Grid.Column ="1"
+            Text="Button Images"
+            Style="{StaticResource TileButton}" />
 
         <Button Grid.Row="1"
         Grid.Column ="0"
-        Text="Button 1, 0"
-            Style="{StaticResource TitleButton}" />
+        Text="Collections"
+            Style="{StaticResource TileButton}" />
 
         <Button Grid.Row="1"
         Grid.Column ="1"
-        Text="Button 1, 1"
-            Style="{StaticResource TitleButton}" />
+        Text="Controls"
+            Style="{StaticResource TileButton}" />
 
         <Button Grid.Row="2"
         Grid.Column ="0"
-        Text="Button 2, 0"
-            Style="{StaticResource TitleButton}" />
+        Grid.ColumnSpan="2"
+        Text="SQL Lite"
+            Style="{StaticResource TileButton}" />
     </Grid>
     
 </ContentPage>
