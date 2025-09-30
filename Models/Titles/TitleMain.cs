@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace MyFirstMAUIApp.Models.Titles
 {
-    class TitleMain
+    public static class TitleMain
     {
+        public static string StackLayout { get; } = "Layouts";
+        public static string VerticalStack { get; } = "Button Images";
+        public static string HorizontalStack { get; } = "Control";
+        public static string AbsoluteLayout { get; } = "SQL Lite";
     }
 }

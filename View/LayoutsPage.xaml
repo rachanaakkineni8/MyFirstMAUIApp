@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyFirstMAUIApp.View.MainPage"
-             Title="{Binding Title}">
-    
+             x:Class="MyFirstMAUIApp.View.LayoutsPage"
+             Title="LayoutsPage">
+
     <Grid Padding = "16,24,16,16"
-          RowSpacing = "6"
-          ColumnSpacing="12">
+      RowSpacing = "6"
+      ColumnSpacing="12">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -20,35 +20,27 @@
         </Grid.ColumnDefinitions>
         
         <Button Grid.Row="0"
-                Grid.Column ="0"
-                Text="Layouts"
-                Style="{StaticResource TileButton}" />
-        
-        <Button Grid.Row="0"
-            Grid.Column ="1"
-            Text="Button Images"
-            Style="{StaticResource TileButton}" />
+            Grid.Column ="0"
+            Grid.ColumnSpan="2"
+            Text="{Binding StackLayout}"
+            SemanticProperties.Description ="Abbsolute Stack" />
 
         <Button Grid.Row="1"
         Grid.Column ="0"
-        Text="Collections"
-            Style="{StaticResource TileButton}" />
+        Text="{Binding VerticalStack}"
+        SemanticProperties.Description ="Abbsolute Stack" />
 
         <Button Grid.Row="1"
         Grid.Column ="1"
-        Text="Controls"
-            Style="{StaticResource TileButton}" />
+        Text="{Binding HorizontalStack}"
+        SemanticProperties.Description ="Abbsolute Stack" />
 
         <Button Grid.Row="2"
         Grid.Column ="0"
         Grid.ColumnSpan="2"
-        Text="SQL Lite"
-            Style="{StaticResource TileButton}" />
-
-        <Button Grid.Row="0"
-                Grid.Column="0"
-                Text="{Binding Layouts}"
-                Command="{Binding OnLayoutsClicked}"/>
+        Text="{Binding AbsoluteStack}"
+        SemanticProperties.Description ="Abbsolute Stack" 
+                />
+        
     </Grid>
-    
 </ContentPage>
