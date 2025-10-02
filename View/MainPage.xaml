@@ -21,7 +21,8 @@
         
         <Button Grid.Row="0"
                 Grid.Column ="0"
-                Text="Layouts"
+                Text="{Binding Layouts}"
+                Command= "{Binding OnLayoutsClicked}"
                 Style="{StaticResource TileButton}" />
         
         <Button Grid.Row="0"
@@ -45,10 +46,7 @@
         Text="SQL Lite"
             Style="{StaticResource TileButton}" />
 
-        <Button Grid.Row="0"
-                Grid.Column="0"
-                Text="{Binding Layouts}"
-                Command="{Binding OnLayoutsClicked}"/>
+        
     </Grid>
     
 </ContentPage>

@@ -18,29 +18,32 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        
+
         <Button Grid.Row="0"
             Grid.Column ="0"
             Grid.ColumnSpan="2"
             Text="{Binding StackLayout}"
-            SemanticProperties.Description ="Abbsolute Stack" />
+             Style= "{StaticResource TileButton}"
+            SemanticProperties.Description ="Stack Layout"/>
 
         <Button Grid.Row="1"
         Grid.Column ="0"
         Text="{Binding VerticalStack}"
-        SemanticProperties.Description ="Abbsolute Stack" />
+        Style= "{StaticResource TileButton}"
+        SemanticProperties.Description ="Vertical Stack"/>
 
         <Button Grid.Row="1"
         Grid.Column ="1"
         Text="{Binding HorizontalStack}"
-        SemanticProperties.Description ="Abbsolute Stack" />
+        Style= "{StaticResource TileButton}"
+        SemanticProperties.Description ="Horizontal Stack"/>
 
         <Button Grid.Row="2"
         Grid.Column ="0"
         Grid.ColumnSpan="2"
-        Text="{Binding AbsoluteStack}"
-        SemanticProperties.Description ="Abbsolute Stack" 
-                />
-        
+        Text="{Binding AbsoluteLayout}"
+        Style= "{StaticResource TileButton}"
+        SemanticProperties.Description ="Absolute Layout"/>
+
     </Grid>
 </ContentPage>

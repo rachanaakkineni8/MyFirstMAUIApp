@@ -10,8 +10,11 @@ namespace MyFirstMAUIApp.ViewModel
     class LayoutsViewModel
     {
         public string StackLayout { get; set; } = TitleLayouts.StackLayout;
+
         public string HorizontalStack { get; set; } = TitleLayouts.HorizontalStack;
+
         public string VerticalStack { get; set; } = TitleLayouts.VerticalStack;
+
         public string AbsoluteLayout { get; set; } = TitleLayouts.AbsoluteLayout;
 
     }
