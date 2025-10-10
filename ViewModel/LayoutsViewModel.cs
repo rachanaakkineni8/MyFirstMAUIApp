@@ -17,16 +17,16 @@ namespace MyFirstMAUIApp.ViewModel
 
         //Button Commands
         [ObservableProperty]
-        private string stackLayout = TitleLayouts.StackLayouts;
+        private string stackLayout = TitleLayouts.StackLayout;
 
         [ObservableProperty]
-        private string verticalLayout = TitleLayouts.VerticalLayouts;
+        private string verticalLayout = TitleLayouts.VerticalStack;
 
         [ObservableProperty]
-        private string horizontalLayout = TitleLayouts.HorizontalLayouts;
+        private string horizontalLayout = TitleLayouts.HorizontalStack;
 
         [ObservableProperty]
-        private string absoluteLayout = TitleLayouts.AbsoluteLayouts;
+        private string absoluteLayout = TitleLayouts.AbsoluteLayout;
 
     
 
