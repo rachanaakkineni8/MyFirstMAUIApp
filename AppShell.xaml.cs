@@ -1,4 +1,6 @@
-﻿namespace MyFirstMAUIApp
+﻿using MyFirstMAUIApp.View;
+
+namespace MyFirstMAUIApp
 {
     public partial class AppShell : Shell
     {
@@ -9,8 +11,7 @@
         }
         private void RegisterRoutes()
         {
-            Routing.RegisterRoute(nameof(DetailsPage)), typeof(DetailsPage));
-            Routing.RegisterRoute(nameof(PickerResultsPage)), typeof(PickerResultsPage));
+            Routing.RegisterRoute(nameof(LayoutsPage), typeof(LayoutsPage));
         }
     }
 }
