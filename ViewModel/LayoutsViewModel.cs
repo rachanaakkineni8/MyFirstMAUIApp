@@ -1,4 +1,7 @@
-﻿using MyFirstMAUIApp.Models.Titles;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using MyFirstMAUIApp.Models.Titles;
+using MyFirstMAUIApp.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,15 +10,40 @@ using System.Threading.Tasks;
 
 namespace MyFirstMAUIApp.ViewModel
 {
-    class LayoutsViewModel
+    public partial class LayoutsViewModel : ObservableObject
     {
-        public string StackLayout { get; set; } = TitleLayouts.StackLayout;
 
-        public string HorizontalStack { get; set; } = TitleLayouts.HorizontalStack;
+        //public string Layouts { get; set; } = TitleMain.Layouts;
 
-        public string VerticalStack { get; set; } = TitleLayouts.VerticalStack;
+        //Button Commands
+        [ObservableProperty]
+        private string stackLayout = TitleLayouts.StackLayouts;
 
-        public string AbsoluteLayout { get; set; } = TitleLayouts.AbsoluteLayout;
+        [ObservableProperty]
+        private string verticalLayout = TitleLayouts.VerticalLayouts;
 
+        [ObservableProperty]
+        private string horizontalLayout = TitleLayouts.HorizontalLayouts;
+
+        [ObservableProperty]
+        private string absoluteLayout = TitleLayouts.AbsoluteLayouts;
+
+    
+
+
+        [RelayCommand]
+
+        //public ICommand OnLayoutsClicked { get; set; }
+
+
+        private async Task OnLayoutsClickedAsync()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutStackPage));
+        }
+
+        public LayoutsViewModel()
+        {
+
+        }
     }
 }

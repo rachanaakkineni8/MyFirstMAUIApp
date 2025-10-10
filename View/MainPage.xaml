@@ -22,7 +22,7 @@
         <Button Grid.Row="0"
                 Grid.Column ="0"
                 Text="{Binding Layouts}"
-                Command= "{Binding OnLayoutsClicked}"
+                Command= "{Binding LayoutsClickedCommand}"
                 Style="{StaticResource TileButton}" />
         
         <Button Grid.Row="0"

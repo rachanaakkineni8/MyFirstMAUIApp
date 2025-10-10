@@ -39,7 +39,7 @@ namespace MyFirstMAUIApp.ViewModel
         //public ICommand OnLayoutsClicked { get; set; }
        
 
-        private async Task OnLayoutsClickedAsync()
+        private async Task LayoutsClicked()
         {
             await Shell.Current.GoToAsync(nameof(LayoutsPage));  
         }

@@ -23,25 +23,29 @@
             Grid.Column ="0"
             Grid.ColumnSpan="2"
             Text="{Binding StackLayout}"
-             Style= "{StaticResource TileButton}"
+            Style= "{StaticResource TileButton}"
+            Command="{Binding StackLayoutClickedCommand}"
             SemanticProperties.Description ="Stack Layout"/>
 
         <Button Grid.Row="1"
         Grid.Column ="0"
         Text="{Binding VerticalStack}"
         Style= "{StaticResource TileButton}"
+        Command="{Binding VerticalLayoutClickedCommand}"
         SemanticProperties.Description ="Vertical Stack"/>
 
         <Button Grid.Row="1"
         Grid.Column ="1"
         Text="{Binding HorizontalStack}"
         Style= "{StaticResource TileButton}"
+        Command="{Binding HorizontalLayoutClickedCommand}"
         SemanticProperties.Description ="Horizontal Stack"/>
 
         <Button Grid.Row="2"
         Grid.Column ="0"
         Grid.ColumnSpan="2"
         Text="{Binding AbsoluteLayout}"
+        Command="{Binding AbsoluteLayoutClickedCommand}"
         Style= "{StaticResource TileButton}"
         SemanticProperties.Description ="Absolute Layout"/>
 
