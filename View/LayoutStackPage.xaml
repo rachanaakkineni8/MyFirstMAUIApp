@@ -3,25 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMAUIApp.View.LayoutStackPage"
              Title="{Binding Layout}">
-    <VerticalStackLayout>
+    
+    <Grid>
        <BoxView 
            Color = "LightBlue"
-           WidthRequest = "100"
-           HeightRequest = "100"
+           WidthRequest = "200"
+           HeightRequest = "200"
            HorizontalOptions = "Center"
            VerticalOptions = "Start"/>
 
        <BoxView Color = "LightGreen"
          WidthRequest = "150"
-         HeightRequest = "50"
+         HeightRequest = "65"
          HorizontalOptions = "End"
          VerticalOptions = "Center"/>
 
        <BoxView Color = "LightPink"
-         WidthRequest = "50"
+         WidthRequest = "65"
          HeightRequest = "150"
          HorizontalOptions = "Start"
          VerticalOptions = "End"/>
 
-    </VerticalStackLayout>
+    </Grid>
 </ContentPage>

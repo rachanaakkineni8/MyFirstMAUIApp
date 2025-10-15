@@ -28,15 +28,8 @@ namespace MyFirstMAUIApp.ViewModel
         [ObservableProperty]
         private string absoluteLayout = TitleLayouts.AbsoluteLayout;
 
-    
-        
-
         [RelayCommand]
-
-        //public ICommand OnLayoutsClicked { get; set; }
-
-
-        private async Task OnLayoutsClickedAsync()
+        private async Task StackLayoutClicked()
         {
             await Shell.Current.GoToAsync(nameof(LayoutStackPage));
         }
