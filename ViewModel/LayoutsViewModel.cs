@@ -29,7 +29,7 @@ namespace MyFirstMAUIApp.ViewModel
         private string absoluteLayout = TitleLayouts.AbsoluteLayout;
 
     
-
+        
 
         [RelayCommand]
 
