@@ -20,10 +20,10 @@ namespace MyFirstMAUIApp.ViewModel
         private string stackLayout = TitleLayouts.StackLayout;
 
         [ObservableProperty]
-        private string verticalLayout = TitleLayouts.VerticalStack;
+        private string verticalStack = TitleLayouts.VerticalStack;
 
         [ObservableProperty]
-        private string horizontalLayout = TitleLayouts.HorizontalStack;
+        private string horizontalStack = TitleLayouts.HorizontalStack;
 
         [ObservableProperty]
         private string absoluteLayout = TitleLayouts.AbsoluteLayout;

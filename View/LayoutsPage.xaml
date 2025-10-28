@@ -5,8 +5,8 @@
              Title="LayoutsPage">
 
     <Grid Padding = "16,24,16,16"
-      RowSpacing = "6"
-      ColumnSpacing="12">
+          RowSpacing = "6"
+          ColumnSpacing="12">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -20,34 +20,30 @@
         </Grid.ColumnDefinitions>
 
         <Button Grid.Row="0"
-            Grid.Column ="0"
-            Grid.ColumnSpan="2"
-            Text="{Binding StackLayout}"
-            Style= "{StaticResource TileButton}"
-            Command="{Binding StackLayoutClickedCommand}"
-            SemanticProperties.Description ="Stack Layout"/>
+                Grid.Column ="0"
+                Grid.ColumnSpan="2"
+                Text="{Binding StackLayout}"
+                Style= "{StaticResource TileButton}"
+                Command="{Binding StackLayoutClickedCommand}" />
 
         <Button Grid.Row="1"
-        Grid.Column ="0"
-        Text="{Binding VerticalStack}"
-        Style= "{StaticResource TileButton}"
-        Command="{Binding VerticalLayoutClickedCommand}"
-        SemanticProperties.Description ="Vertical Stack"/>
+                Grid.Column ="0"
+                Text="{Binding VerticalStack}"
+                Style= "{StaticResource TileButton}"
+                Command="{Binding VerticalLayoutClickedCommand}" />
 
         <Button Grid.Row="1"
-        Grid.Column ="1"
-        Text="{Binding HorizontalStack}"
-        Style= "{StaticResource TileButton}"
-        Command="{Binding HorizontalLayoutClickedCommand}"
-        SemanticProperties.Description ="Horizontal Stack"/>
+                Grid.Column ="1"
+                Text="{Binding HorizontalStack}"
+                Style= "{StaticResource TileButton}"
+                Command="{Binding HorizontalLayoutClickedCommand}" />
 
         <Button Grid.Row="2"
-        Grid.Column ="0"
-        Grid.ColumnSpan="2"
-        Text="{Binding AbsoluteLayout}"
-        Command="{Binding AbsoluteLayoutClickedCommand}"
-        Style= "{StaticResource TileButton}"
-        SemanticProperties.Description ="Absolute Layout"/>
+                Grid.Column ="0"
+                Grid.ColumnSpan="2"
+                Text="{Binding AbsoluteLayout}"
+                Command="{Binding AbsoluteLayoutClickedCommand}"
+                Style= "{StaticResource TileButton}" />
 
     </Grid>
-</ContentPage>
+</ContentPage>    
