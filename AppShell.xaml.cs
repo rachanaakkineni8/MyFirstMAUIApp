@@ -1,4 +1,5 @@
 ﻿using MyFirstMAUIApp.View;
+using MyFirstMAUIApp.ViewModel;
 
 namespace MyFirstMAUIApp
 {
@@ -14,8 +15,9 @@ namespace MyFirstMAUIApp
             //Layouts
             Routing.RegisterRoute(nameof(LayoutsPage), typeof(LayoutsPage));
             Routing.RegisterRoute(nameof(LayoutStackPage), typeof(LayoutStackPage));
-            Routing.RegisterRoute(nameof(VerticalStackLayout), typeof(VerticalStackLayout));
-            Routing.RegisterRoute(nameof(HorizontalStackLayout), typeof(HorizontalStackLayout));
+            Routing.RegisterRoute(nameof(LayoutHorizontalStackPage), typeof(LayoutHorizontalStackPage));
+            Routing.RegisterRoute(nameof(LayoutVerticalStackPage), typeof(LayoutVerticalStackPage));
         }
     }
 }
+

@@ -2,11 +2,6 @@
 using CommunityToolkit.Mvvm.Input;
 using MyFirstMAUIApp.Models.Titles;
 using MyFirstMAUIApp.View;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MyFirstMAUIApp.ViewModel
 {
@@ -32,6 +27,17 @@ namespace MyFirstMAUIApp.ViewModel
         private async Task StackLayoutClicked()
         {
             await Shell.Current.GoToAsync(nameof(LayoutStackPage));
+        }
+
+        [RelayCommand]
+        public async Task VerticalLayoutStackClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutVerticalStackPage));
+        }
+        [RelayCommand]
+        public async Task HorizontalLayoutStackClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutHorizontalStackPage));
         }
 
         public LayoutsViewModel()

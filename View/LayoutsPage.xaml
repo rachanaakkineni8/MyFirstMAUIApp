@@ -30,7 +30,7 @@
                 Grid.Column ="0"
                 Text="{Binding VerticalStack}"
                 Style= "{StaticResource TileButton}"
-                Command="{Binding VerticalLayoutClickedCommand}" />
+                Command="{Binding VerticalLayoutStackClickedCommand}" />
 
         <Button Grid.Row="1"
                 Grid.Column ="1"
