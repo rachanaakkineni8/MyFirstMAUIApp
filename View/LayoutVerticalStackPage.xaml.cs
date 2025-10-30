@@ -5,5 +5,6 @@ public partial class LayoutVerticalStackPage : ContentPage
 	public LayoutVerticalStackPage()
 	{
 		InitializeComponent();
+		BindingContext = new LayoutVerticalStackViewModel();
 	}
 }

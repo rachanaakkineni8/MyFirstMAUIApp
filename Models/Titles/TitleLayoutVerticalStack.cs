@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace MyFirstMAUIApp.Models.Titles
 {
-    internal class TitleLayoutVerticalStack
+    public partial class TitleLayoutVerticalStack
     {
+        public static string Title { get; } = "TitleLayoutVerticalStack";
     }
 }
 
