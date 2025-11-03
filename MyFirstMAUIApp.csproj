@@ -82,6 +82,9 @@
 	  <MauiXaml Update="Resources\Styles\ButtonStyles.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="View\LayoutAbsoluteStackPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="View\LayoutHorizontalStackPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

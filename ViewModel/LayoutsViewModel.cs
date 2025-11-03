@@ -34,10 +34,17 @@ namespace MyFirstMAUIApp.ViewModel
         {
             await Shell.Current.GoToAsync(nameof(LayoutVerticalStackPage));
         }
+
         [RelayCommand]
         public async Task HorizontalLayoutStackClicked()
         {
             await Shell.Current.GoToAsync(nameof(LayoutHorizontalStackPage));
+        }
+
+        [RelayCommand]
+        public async Task AbsoluteLayoutStackClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutAbsoluteStackPage));
         }
 
         public LayoutsViewModel()

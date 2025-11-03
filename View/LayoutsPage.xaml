@@ -42,7 +42,7 @@
                 Grid.Column ="0"
                 Grid.ColumnSpan="2"
                 Text="{Binding AbsoluteLayout}"
-                Command="{Binding AbsoluteLayoutClickedCommand}"
+                Command="{Binding AbsoluteLayoutStackClickedCommand}"
                 Style= "{StaticResource TileButton}" />
 
     </Grid>
