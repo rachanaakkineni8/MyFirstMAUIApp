@@ -21,9 +21,9 @@
         
         <Button Grid.Row="0"
                 Grid.Column ="0"
-                Text="{Binding Layouts}"
-                Command= "{Binding LayoutsClickedCommand}"
-                Style="{StaticResource TileButton}" />
+                Text ="{Binding Layouts}"
+                Command = "{Binding LayoutsClickedCommand}"
+                Style ="{StaticResource TileButton}" />
         
         <Button Grid.Row="0"
             Grid.Column ="1"

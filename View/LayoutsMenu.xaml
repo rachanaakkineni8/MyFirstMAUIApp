@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMAUIApp.View.LayoutsPage"
-             Title="LayoutsPage">
+             Title="{Binding Title}">
 
     <Grid Padding = "16,24,16,16"
           RowSpacing = "6"

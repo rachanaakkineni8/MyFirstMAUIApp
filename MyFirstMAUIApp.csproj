@@ -76,25 +76,40 @@
 	  <Compile Update="Resources\Styles\ButtonStyles.xaml.cs">
 	    <DependentUpon>ButtonStyles.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="View\LayoutAbsoluteStackMenu.xaml.cs">
+	    <DependentUpon>LayoutAbsoluteStackMenu.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="View\LayoutHorizontalStackMenu.xaml.cs">
+	    <DependentUpon>LayoutHorizontalStackMenu.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="View\LayoutsMenu.xaml.cs">
+	    <DependentUpon>LayoutsMenu.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="View\LayoutStackMenu.xaml.cs">
+	    <DependentUpon>LayoutStackMenu.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="View\LayoutVerticalStackMenu.xaml.cs">
+	    <DependentUpon>LayoutVerticalStackMenu.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Update="Resources\Styles\ButtonStyles.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="View\LayoutAbsoluteStackPage.xaml">
+	  <MauiXaml Update="View\LayoutAbsoluteStackMenu.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="View\LayoutHorizontalStackPage.xaml">
+	  <MauiXaml Update="View\LayoutHorizontalStackMenu.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="View\LayoutVerticalStackPage.xaml">
+	  <MauiXaml Update="View\LayoutVerticalStackMenu.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="View\LayoutsPage.xaml">
+	  <MauiXaml Update="View\LayoutsMenu.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="View\LayoutStackPage.xaml">
+	  <MauiXaml Update="View\LayoutStackMenu.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\MainPage.xaml">

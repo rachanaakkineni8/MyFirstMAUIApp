@@ -8,6 +8,6 @@ namespace MyFirstMAUIApp.Models.Titles
 {
     public static class TitleLayoutHorizontalStack
     {
-        public static string Title { get; } = "TitleLayoutHorizontalStack";
+        public static string Title { get; } = "TitleLayoutHorizontalStackMenu";
     }
 }

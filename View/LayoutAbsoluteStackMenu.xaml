@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstMAUIApp.View.LayoutAbsoluteStackPage"
+             Title="{Binding Title}">
+    <AbsoluteLayout>
+
+        <BoxView Color="Green"
+                 AbsoluteLayout.LayoutBounds="20, 200, 75, 50"/>
+
+        <Label Text = "01"
+               FontSize="25"
+               TextColor="White" 
+               AbsoluteLayout.LayoutBounds="45, 200, 75, 100"/>
+
+        <BoxView Color="Red" 
+                 AbsoluteLayout.LayoutBounds="120, 200, 75, 50"/>
+
+        <Label Text="02"
+               FontSize=" 25 "
+               TextColor="White" 
+               AbsoluteLayout.LayoutBounds="145, 200, 75, 100"/>
+
+        <BoxView Color="Bisque"
+                 AbsoluteLayout.LayoutBounds="220, 200, 75, 50 "/>
+        
+        <Label Text="03"
+               FontSize=" 25 "
+               TextColor="Maroon" 
+               AbsoluteLayout.LayoutBounds="245, 200, 75, 100"/>
+
+        <BoxView Color="SkyBlue"
+         AbsoluteLayout.LayoutBounds="320, 200, 75, 50 "/>
+
+        <Label Text="04"
+                FontSize=" 25 "
+                TextColor="Purple" 
+                AbsoluteLayout.LayoutBounds="345, 200, 75, 100"/>
+
+
+        <BoxView Color="MintCream" 
+                AbsoluteLayout.LayoutBounds="320, 200, 75, 50 "/>
+
+        <Label Text="05"
+                FontSize=" 25 "
+                TextColor="LightGreen" 
+                AbsoluteLayout.LayoutBounds="45, 275, 75, 100"/>
+
+        <BoxView Color="Maroon"
+                AbsoluteLayout.LayoutBounds="20, 275, 75, 50 "/>
+
+        <Label Text="06"
+                FontSize=" 25 "
+                TextColor="Yellow" 
+                AbsoluteLayout.LayoutBounds="145, 275, 75, 100"/>
+
+        <BoxView Color="CadetBlue" 
+                AbsoluteLayout.LayoutBounds="220, 275, 75, 50 "/>
+
+        <Label Text="07"
+                FontSize=" 25 "
+                TextColor="White" 
+                AbsoluteLayout.LayoutBounds="245, 275, 75, 100"/>
+        
+        <BoxView Color="MediumPurple" 
+        AbsoluteLayout.LayoutBounds="320, 275, 75, 50 "/>
+
+        <Label Text="08"
+                FontSize=" 25 "
+                TextColor="Yellow" 
+                AbsoluteLayout.LayoutBounds="345, 275, 75, 100"/>
+        
+        <BoxView Color="Olive" 
+        AbsoluteLayout.LayoutBounds="20, 350, 75, 50 "/>
+
+        <Label Text="09"
+                FontSize=" 25 "
+                TextColor="Red" 
+                AbsoluteLayout.LayoutBounds="45, 350, 75, 100"/>
+        
+        <BoxView Color="DarkCyan" 
+        AbsoluteLayout.LayoutBounds="120, 350, 75, 50 "/>
+
+        <Label Text="10"
+                FontSize=" 25 "
+                TextColor="OrangeRed" 
+                AbsoluteLayout.LayoutBounds="145, 350, 75, 100"/>
+
+        <BoxView Color="DarkOliveGreen" 
+        AbsoluteLayout.LayoutBounds="220, 350, 75, 50 "/>
+
+        <Label Text="11"
+                FontSize=" 25 "
+                TextColor="LightBlue" 
+                AbsoluteLayout.LayoutBounds="245, 350, 75, 100"/>
+
+        <BoxView Color="SteelBlue" 
+        AbsoluteLayout.LayoutBounds="320, 350, 75, 50 "/>
+
+        <Label Text="12"
+                FontSize=" 25 "
+                TextColor="Cyan" 
+                AbsoluteLayout.LayoutBounds="345, 350, 75, 100"/>
+
+    </AbsoluteLayout>
+</ContentPage>
