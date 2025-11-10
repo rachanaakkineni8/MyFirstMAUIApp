@@ -14,15 +14,15 @@
                AbsoluteLayout.LayoutBounds="45, 200, 75, 100"/>
 
         <BoxView Color="Red" 
-                 AbsoluteLayout.LayoutBounds="120, 200, 75, 50"/>
+               AbsoluteLayout.LayoutBounds="120, 200, 75, 50"/>
 
         <Label Text="02"
                FontSize=" 25 "
-               TextColor="White" 
+               TextColor="FloralWhite" 
                AbsoluteLayout.LayoutBounds="145, 200, 75, 100"/>
 
         <BoxView Color="Bisque"
-                 AbsoluteLayout.LayoutBounds="220, 200, 75, 50 "/>
+               AbsoluteLayout.LayoutBounds="220, 200, 75, 50 "/>
         
         <Label Text="03"
                FontSize=" 25 "
@@ -30,45 +30,45 @@
                AbsoluteLayout.LayoutBounds="245, 200, 75, 100"/>
 
         <BoxView Color="SkyBlue"
-         AbsoluteLayout.LayoutBounds="320, 200, 75, 50 "/>
+               AbsoluteLayout.LayoutBounds="320, 200, 75, 50 "/>
 
         <Label Text="04"
-                FontSize=" 25 "
-                TextColor="Purple" 
-                AbsoluteLayout.LayoutBounds="345, 200, 75, 100"/>
+               FontSize=" 25 "
+               TextColor="Purple" 
+               AbsoluteLayout.LayoutBounds="345, 200, 75, 100"/>
 
 
-        <BoxView Color="MintCream" 
-                AbsoluteLayout.LayoutBounds="320, 200, 75, 50 "/>
-
+        <BoxView Color="Aquamarine"
+               AbsoluteLayout.LayoutBounds="20, 275,75,50"/>
+        
         <Label Text="05"
-                FontSize=" 25 "
-                TextColor="LightGreen" 
-                AbsoluteLayout.LayoutBounds="45, 275, 75, 100"/>
+               FontSize=" 25 "
+               TextColor="DarkGreen" 
+               AbsoluteLayout.LayoutBounds="45, 275, 75, 100"/>
 
         <BoxView Color="Maroon"
-                AbsoluteLayout.LayoutBounds="20, 275, 75, 50 "/>
+               AbsoluteLayout.LayoutBounds="120, 275, 75, 50 "/>
 
         <Label Text="06"
-                FontSize=" 25 "
-                TextColor="Yellow" 
-                AbsoluteLayout.LayoutBounds="145, 275, 75, 100"/>
+               FontSize=" 25 "
+               TextColor="GhostWhite" 
+               AbsoluteLayout.LayoutBounds="145, 275, 75, 100"/>
 
         <BoxView Color="CadetBlue" 
-                AbsoluteLayout.LayoutBounds="220, 275, 75, 50 "/>
+               AbsoluteLayout.LayoutBounds="220, 275, 75, 50 "/>
 
         <Label Text="07"
-                FontSize=" 25 "
-                TextColor="White" 
-                AbsoluteLayout.LayoutBounds="245, 275, 75, 100"/>
+               FontSize=" 25 "
+               TextColor="WhiteSmoke" 
+               AbsoluteLayout.LayoutBounds="245, 275, 75, 100"/>
         
         <BoxView Color="MediumPurple" 
-        AbsoluteLayout.LayoutBounds="320, 275, 75, 50 "/>
+                AbsoluteLayout.LayoutBounds="320, 275, 75, 50 "/>
 
         <Label Text="08"
-                FontSize=" 25 "
-                TextColor="Yellow" 
-                AbsoluteLayout.LayoutBounds="345, 275, 75, 100"/>
+               FontSize=" 25 "
+               TextColor="Yellow" 
+               AbsoluteLayout.LayoutBounds="345, 275, 75, 100"/>
         
         <BoxView Color="Olive" 
         AbsoluteLayout.LayoutBounds="20, 350, 75, 50 "/>
@@ -78,29 +78,29 @@
                 TextColor="Red" 
                 AbsoluteLayout.LayoutBounds="45, 350, 75, 100"/>
         
-        <BoxView Color="DarkCyan" 
+        <BoxView Color="Cyan" 
         AbsoluteLayout.LayoutBounds="120, 350, 75, 50 "/>
 
         <Label Text="10"
-                FontSize=" 25 "
-                TextColor="OrangeRed" 
-                AbsoluteLayout.LayoutBounds="145, 350, 75, 100"/>
+               FontSize=" 25 "
+               TextColor="OrangeRed" 
+               AbsoluteLayout.LayoutBounds="145, 350, 75, 100"/>
 
         <BoxView Color="DarkOliveGreen" 
-        AbsoluteLayout.LayoutBounds="220, 350, 75, 50 "/>
+               AbsoluteLayout.LayoutBounds="220, 350, 75, 50 "/>
 
         <Label Text="11"
-                FontSize=" 25 "
-                TextColor="LightBlue" 
-                AbsoluteLayout.LayoutBounds="245, 350, 75, 100"/>
+               FontSize=" 25 "
+               TextColor="LightBlue" 
+               AbsoluteLayout.LayoutBounds="245, 350, 75, 100"/>
 
         <BoxView Color="SteelBlue" 
-        AbsoluteLayout.LayoutBounds="320, 350, 75, 50 "/>
+               AbsoluteLayout.LayoutBounds="320, 350, 75, 50 "/>
 
         <Label Text="12"
-                FontSize=" 25 "
-                TextColor="Cyan" 
-                AbsoluteLayout.LayoutBounds="345, 350, 75, 100"/>
+               FontSize=" 25 "
+               TextColor="Cyan" 
+               AbsoluteLayout.LayoutBounds="345, 350, 75, 100"/>
 
     </AbsoluteLayout>
 </ContentPage>
