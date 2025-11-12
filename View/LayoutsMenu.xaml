@@ -40,10 +40,15 @@
 
         <Button Grid.Row="2"
                 Grid.Column ="0"
-                Grid.ColumnSpan="2"
+                Grid.ColumnSpan="1"
                 Text="{Binding AbsoluteLayout}"
                 Command="{Binding AbsoluteLayoutStackClickedCommand}"
                 Style= "{StaticResource TileButton}" />
-
+        <Button Grid.Row="2"
+                Grid.Column ="1"
+                Grid.ColumnSpan="1"
+                Text="{Binding FlexLayout}"
+                Command="{Binding FlexLayoutClickedCommand}"
+                Style= "{StaticResource TileButton}" />
     </Grid>
 </ContentPage>    

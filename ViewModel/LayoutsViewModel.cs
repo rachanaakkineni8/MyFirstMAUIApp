@@ -47,9 +47,10 @@ namespace MyFirstMAUIApp.ViewModel
             await Shell.Current.GoToAsync(nameof(LayoutAbsoluteStackPage));
         }
 
-        public LayoutsViewModel()
+        [RelayCommand]
+        public async Task FlexLayoutClicked()
         {
-
+            await Shell.Current.GoToAsync(nameof(FlexLayout));
         }
     }
 }

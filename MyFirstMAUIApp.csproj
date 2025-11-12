@@ -79,6 +79,9 @@
 	  <Compile Update="View\LayoutAbsoluteStackMenu.xaml.cs">
 	    <DependentUpon>LayoutAbsoluteStackMenu.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="View\LayoutFlex.xaml.cs">
+	    <DependentUpon>LayoutFlex.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="View\LayoutHorizontalStackMenu.xaml.cs">
 	    <DependentUpon>LayoutHorizontalStackMenu.xaml</DependentUpon>
 	  </Compile>
@@ -98,6 +101,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\LayoutAbsoluteStackMenu.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\LayoutFlex.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\LayoutHorizontalStackMenu.xaml">

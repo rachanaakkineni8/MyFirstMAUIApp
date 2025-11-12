@@ -18,6 +18,7 @@ namespace MyFirstMAUIApp
             Routing.RegisterRoute(nameof(LayoutHorizontalStackPage), typeof(LayoutHorizontalStackPage));
             Routing.RegisterRoute(nameof(LayoutVerticalStackPage), typeof(LayoutVerticalStackPage));
             Routing.RegisterRoute(nameof(LayoutAbsoluteStackPage), typeof(LayoutAbsoluteStackPage));
+            Routing.RegisterRoute(nameof(LayoutFlex), typeof(LayoutFlex));
         }
     }
 }
