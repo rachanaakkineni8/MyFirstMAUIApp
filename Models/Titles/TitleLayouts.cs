@@ -13,6 +13,6 @@ namespace MyFirstMAUIApp.Models.Titles
         public static string VerticalStack { get; } = "Vertical Layout";
         public static string HorizontalStack { get; } = "Horizontal Layout";
         public static string AbsoluteLayout { get; } = "Absolute Layout";
-        public static string FlexLayout { get; } = "Flex Layout";
+        public static string LayoutFlex { get; } = "Flex Layout";
     }
 }
