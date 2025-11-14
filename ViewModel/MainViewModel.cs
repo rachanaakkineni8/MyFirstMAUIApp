@@ -43,7 +43,13 @@ namespace MyFirstMAUIApp.ViewModel
         {
             await Shell.Current.GoToAsync(nameof(LayoutsPage));  
         }
-   
+
+        [RelayCommand]
+        private async Task ImagesClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(ImagesPage));
+        }
+
         public MainViewModel()
         {
           
