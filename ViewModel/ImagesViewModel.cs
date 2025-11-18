@@ -5,14 +5,26 @@ using MyFirstMAUIApp.View;
 
 namespace MyFirstMAUIApp.ViewModel
 {
-    public partial class ImagesViewModel : ObservableObject
+    public partial class LayoutsViewModel : ObservableObject
     {
-        public string ImagesURI { get; } = TitleImages.ImagesURI;
+
+        //public string Layouts { get; set; } = TitleMain.Layouts;
+
+        //Button Commands
+        [ObservableProperty]
+        private string uRIImages = TitleImages.URIImages;
+
+        [ObservableProperty]
+        private string embeddedImages = TitleImages.EmbeddedImages;
+
+        [ObservableProperty]
+        private string activityIndicator = TitleImages.ActivityIndicator;
+
 
         [RelayCommand]
-        private async Task ImagesURIClicked()
+        private async Task URIImagesClicked()
         {
-            await Shell.Current.GoToAsync(nameof(ImagesURI));
+            await Shell.Current.GoToAsync(nameof(ImagesURIPage));
         }
     }
 }

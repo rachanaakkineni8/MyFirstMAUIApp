@@ -21,6 +21,7 @@ namespace MyFirstMAUIApp
             Routing.RegisterRoute(nameof(LayoutFlex), typeof(LayoutFlex));
             //Images
             Routing.RegisterRoute(nameof(ImagesPage), typeof(ImagesPage));
+            Routing.RegisterRoute(nameof(ImagesURIPage), typeof(ImagesURIPage));
         }
     }   
 }
