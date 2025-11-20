@@ -23,6 +23,9 @@ namespace MyFirstMAUIApp.ViewModel
         [ObservableProperty]
         private string absoluteLayout = TitleLayouts.AbsoluteLayout;
 
+        [ObservableProperty]
+        private string layoutFlex = TitleLayouts.LayoutFlex;
+
         [RelayCommand]
         private async Task StackLayoutClicked()
         {

@@ -22,6 +22,8 @@ namespace MyFirstMAUIApp
             //Images
             Routing.RegisterRoute(nameof(ImagesPage), typeof(ImagesPage));
             Routing.RegisterRoute(nameof(ImagesURIPage), typeof(ImagesURIPage));
+            Routing.RegisterRoute(nameof(ImagesEmbeddedPage), typeof(ImagesEmbeddedPage));
+
         }
     }   
 }

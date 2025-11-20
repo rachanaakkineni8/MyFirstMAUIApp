@@ -1,24 +1,22 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using MyFirstMAUIApp.Models.Titles;
+using Microsoft.Maui.Controls;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MyFirstMAUIApp.ViewModel
 {
     public partial class ImagesURIViewModel : ObservableObject
     {
-        public string Title => TitleImages.URIImagesTitle;
+        public string Title => TitleImagesURI.Title;
 
         [ObservableProperty]
         private ImageSource imageSourceUrl;
+
         public ImagesURIViewModel()
         {
-            imagesSourceUrl = new UriImageSourceService
+            imageSourceUrl = new UriImageSource
             {
-                Uri = new Uri(TitleImagesURI.ImagesURL),
+                Uri = new Uri(TitleImagesURI.ImageURL),
                 CachingEnabled = true,
                 CacheValidity = TimeSpan.FromDays(1)
             };
