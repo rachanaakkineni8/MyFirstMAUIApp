@@ -14,7 +14,7 @@ namespace MyFirstMAUIApp.ViewModel
 {
     public partial class MainViewModel : ObservableObject
     {
-        
+
         //public string Layouts { get; set; } = TitleMain.Layouts;
 
         //Button Commands
@@ -33,15 +33,11 @@ namespace MyFirstMAUIApp.ViewModel
         [ObservableProperty]
         private string controls = TitleMain.Controls;
 
-        
+
         [RelayCommand]
-
-        //public ICommand OnLayoutsClicked { get; set; }
-       
-
         private async Task LayoutsClicked()
         {
-            await Shell.Current.GoToAsync(nameof(LayoutsPage));  
+            await Shell.Current.GoToAsync(nameof(LayoutsPage));
         }
 
         [RelayCommand]
@@ -50,9 +46,17 @@ namespace MyFirstMAUIApp.ViewModel
             await Shell.Current.GoToAsync(nameof(ImagesPage));
         }
 
+        // Add command for Collections button
+        [RelayCommand]
+        private async Task CollectionsClicked()
+        {
+            // Navigate using the registered route name
+            await Shell.Current.GoToAsync("CollectionsMenu");
+        }
+
         public MainViewModel()
         {
-          
+
         }
     }
 }

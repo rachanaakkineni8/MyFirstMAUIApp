@@ -3,9 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMAUIApp.View.ImagesActivityIndicator"
              Title="{Binding Title}">
-    <Grid VerticalOptions ="Fill">
-        HorizntalOptions="Fill">
-        
+    <Grid VerticalOptions="Fill" HorizontalOptions="Fill">
         <ActivityIndicator 
             IsRunning="True" 
             Color="Blue" 
@@ -13,9 +11,9 @@
             HeightRequest="100" 
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        
-        <ImageSource="Binding LoadedImage"
-            isVisible = {Binding IsImageVisible}
+        <Image
+            Source="{Binding LoadedImage}"
+            IsVisible="{Binding IsImageVisible}"
             Aspect="AspectFill"
             VerticalOptions="Center"
             HorizontalOptions="Center" />
