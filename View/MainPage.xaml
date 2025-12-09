@@ -31,31 +31,18 @@
                 Command = "{Binding ImagesClickedCommand}"
                 Style="{StaticResource TileButton}" />
 
-        <!-- Replaced the two separate tiles with a full-width horizontal pair:
-             left is the Collections tile, right is the new rectangular "Marvel Movies" button -->
-        <HorizontalStackLayout Grid.Row="1"
-                               Grid.Column="0"
-                               Grid.ColumnSpan="2"
-                               Spacing="12"
-                               HorizontalOptions="FillAndExpand">
 
-            <Button
-                Text="{Binding Collections}"
-                Command="{Binding CollectionsClickedCommand}"
-                Style="{StaticResource TileButton}"
-                HorizontalOptions="FillAndExpand"
-                HeightRequest="64"
-                CornerRadius="0" />
+        <Button Grid.Row="1"
+        Grid.Column ="0"
+        Text ="{Binding Collections}"
+        Command = "{Binding CollectionsClickedCommand}"
+        Style ="{StaticResource TileButton}" />
 
-            <Button
-                Text="Marvel Movies"
-                Command="{Binding CollectionsClickedCommand}"
-                Style="{StaticResource TileButton}"
-                HorizontalOptions="FillAndExpand"
-                HeightRequest="64"
-                CornerRadius="0" />
-
-        </HorizontalStackLayout>
+        <Button Grid.Row="1"
+        Grid.Column ="1"
+        Text ="{Binding Controls}"
+        Command = "{Binding ControlsClickedCommand}"
+        Style="{StaticResource TileButton}" />
 
         <Button Grid.Row="2"
                 Grid.Column ="0"

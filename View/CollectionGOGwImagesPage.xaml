@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstMAUIApp.View.CollectionGOGwImagesPage"
+             Title="CollectionGOGwImagesPage">
+    
+    <VerticalStackLayout Padding="24,16"
+                     Spacing="24">
+        <Grid RowSpacing="20"
+          ColumnSpacing="20"
+          Padding="24">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Row="0"
+            Grid.Column="0"
+            Text="{Binding Collection}"
+            Command="{Binding CollectionClickedCommand}"
+            Style="{StaticResource TitleButton}"/>
+
+            <Button Grid.Row="1"
+            Grid.Column="0"
+            Text="{Binding Images}"
+            Command="{Binding ImagesCollectionClickedCommand}"
+            Style="{StaticResource TitleButton}"/>
+
+            <Button Grid.Row="2"
+            Grid.Column="0"
+            Text="{Binding Buttons}"
+            Command="{Binding ButtonsCollectionClickedCommand}"
+            Style="{StaticResource TitleButton}"/>
+
+            <Button Grid.Row="3"
+                Grid.Column="0"
+                Text="{Binding Icons}"
+                Command="{Binding IconsCollectionClickedCommand}"
+                Style="{StaticResource TitleButton}"/>
+        </Grid>
+
+    </VerticalStackLayout>
+
+
+</ContentPage>
