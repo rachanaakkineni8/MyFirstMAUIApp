@@ -10,13 +10,6 @@
                FontAttributes="Bold"
                HorizontalOptions="Center" />
 
-        <Button Text="Marvel Movies"
-                Style="{StaticResource TileButton}"
-                Clicked="OnMarvelMoviesClicked" />
-
-        <Button Text="Marvel Movies with Images"
-                Style="{StaticResource TileButton}"
-                Clicked="OnMarvelMoviesWithImagesClicked" />
-
+        
     </VerticalStackLayout>
 </ContentPage>

@@ -2,51 +2,60 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMAUIApp.View.CollectionGOGwImagesPage"
-             Title="CollectionGOGwImagesPage">
-    
-    <VerticalStackLayout Padding="24,16"
-                     Spacing="24">
-        <Grid RowSpacing="20"
-          ColumnSpacing="20"
-          Padding="24">
+             Title="{Binding Title}">
 
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
+    <Grid Padding="16,24,16,16"
+          RowSpacing="6"
+          ColumnSpacing="12">
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+        <!-- EXACT same row/col layout as teacher -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
 
-            <Button Grid.Row="0"
-            Grid.Column="0"
-            Text="{Binding Collection}"
-            Command="{Binding CollectionClickedCommand}"
-            Style="{StaticResource TitleButton}"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
 
-            <Button Grid.Row="1"
-            Grid.Column="0"
-            Text="{Binding Images}"
-            Command="{Binding ImagesCollectionClickedCommand}"
-            Style="{StaticResource TitleButton}"/>
+        <!-- Button 1: spans 2 columns EXACTLY LIKE TEACHER -->
+        <Button Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Text="{Binding Collection}"
+                Command="{Binding CollectionClickedCommand}"
+                Style="{StaticResource TileButton}" />
 
-            <Button Grid.Row="2"
-            Grid.Column="0"
-            Text="{Binding Buttons}"
-            Command="{Binding ButtonsCollectionClickedCommand}"
-            Style="{StaticResource TitleButton}"/>
+        <!-- Button 2 -->
+        <Button Grid.Row="1"
+                Grid.Column="0"
+                Text="{Binding Images}"
+                Command="{Binding ImagesClickedCommand}"
+                Style="{StaticResource TileButton}" />
 
-            <Button Grid.Row="3"
+        <!-- Button 3 -->
+        <Button Grid.Row="1"
+                Grid.Column="1"
+                Text="{Binding Buttons}"
+                Command="{Binding ButtonsClickedCommand}"
+                Style="{StaticResource TileButton}" />
+
+        <!-- Button 4 -->
+        <Button Grid.Row="2"
                 Grid.Column="0"
                 Text="{Binding Icons}"
-                Command="{Binding IconsCollectionClickedCommand}"
-                Style="{StaticResource TitleButton}"/>
-        </Grid>
+                Command="{Binding IconsClickedCommand}"
+                Style="{StaticResource TileButton}" />
 
-    </VerticalStackLayout>
+        <!-- Button 5 (optional if you want 5 like teacher's) -->
+        <Button Grid.Row="2"
+                Grid.Column="1"
+                Text="{Binding Extras}"
+                Command="{Binding ExtrasClickedCommand}"
+                Style="{StaticResource TileButton}" />
 
-
+    </Grid>
 </ContentPage>
+

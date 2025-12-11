@@ -2,30 +2,40 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMAUIApp.View.CollectionsMenu"
-             Title="CollectionsMenu"
-             BackgroundColor="White"
-             InputTransparent="False"
-             Loaded="OnPageLoaded">
+             Title="{Binding Title}"
+             BackgroundColor="White">
 
-    <!-- Root layout explicitly allows input and has padding so it's easy to tap -->
-    <VerticalStackLayout x:Name="RootLayout"
-                         Padding="20"
-                         Spacing="12"
-                         InputTransparent="False">
+    <Grid Padding="16,24,16,16"
+          RowSpacing="6"
+          ColumnSpacing="12">
 
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
 
-        <!-- Clickable Collections button -->
-        <Button
-            x:Name="CollectionsButton"
-            Text="Open Collections"
-            Clicked="OnCollectionsButtonClicked"
-            HorizontalOptions="Center"
-            VerticalOptions="Center"
-            IsEnabled="True" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
 
-    </VerticalStackLayout>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Text="{Binding Collection}"
+                Command="{Binding CollectionClickedCommand}"
+                Style="{StaticResource TileButton}" />
+
+       
+        <Button Grid.Row="1"
+                Grid.Column="0"
+                Text="{Binding Collection wImages}"
+                Command="{Binding CollectionwImagesClickedCommand}"
+                Style="{StaticResource TileButton}" />
+
+
+        
+    </Grid>
 </ContentPage>

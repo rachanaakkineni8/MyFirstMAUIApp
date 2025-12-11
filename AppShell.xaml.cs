@@ -1,6 +1,5 @@
 ﻿using MyFirstMAUIApp.View;
 using MyFirstMAUIApp.ViewModel;
-using CollectionsMenu = MyFirstMAUIApp.ViewModel.CollectionsMenu;
 
 namespace MyFirstMAUIApp
 {

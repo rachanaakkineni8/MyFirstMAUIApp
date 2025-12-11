@@ -1,9 +1,14 @@
-namespace MyFirstMAUIApp.View;
+// File: View/CollectionGOGwImagesPage.xaml.cs
 
-public partial class CollectionGOGwImagesPage : ContentPage
+using MyFirstMAUIApp.ViewModel;
+
+namespace MyFirstMAUIApp.View
 {
-	public CollectionGOGwImagesPage()
-	{
-		InitializeComponent();
-	}
+    public partial class CollectionGOGwImagesPage : ContentPage
+    {
+        public CollectionGOGwImagesPage()
+        {
+            InitializeComponent();
+        }
+    }
 }
