@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace MyFirstMAUIApp.Models.Titles
 {
-    internal class MarvelMovieMenu
+    public static class TitleMarvelMovies
     {
+        public static string MarvelMoviesTitle { get; } = "Marvel Movies";
     }
+
 }
+

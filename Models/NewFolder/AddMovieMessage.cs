@@ -4,21 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyFirstMAUIApp.Models.Titles
+namespace MyFirstMAUIApp.Models.NewFolder
 {
-    internal class CollectionsMenu
+    class AddMovieMessage
     {
-    
     }
 }
-
-
-
-
-
-
-
-
-
-
-
