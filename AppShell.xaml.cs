@@ -25,7 +25,7 @@ namespace MyFirstMAUIApp
             Routing.RegisterRoute(nameof(ImagesEmbeddedPage), typeof(ImagesEmbeddedPage));
             //Collections
             Routing.RegisterRoute("CollectionsMenu", typeof(MyFirstMAUIApp.View.CollectionsMenu));
-
+            Routing.RegisterRoute("Collection", typeof(MyFirstMAUIApp.View.CollectionGOGwImagesPage));
 
         }
     }
