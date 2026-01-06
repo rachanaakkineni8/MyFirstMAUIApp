@@ -28,14 +28,12 @@
                 Command="{Binding CollectionClickedCommand}"
                 Style="{StaticResource TileButton}" />
 
-       
+
         <Button Grid.Row="1"
                 Grid.Column="0"
                 Text="{Binding Collection wImages}"
                 Command="{Binding CollectionwImagesClickedCommand}"
                 Style="{StaticResource TileButton}" />
 
-
-        
     </Grid>
 </ContentPage>
