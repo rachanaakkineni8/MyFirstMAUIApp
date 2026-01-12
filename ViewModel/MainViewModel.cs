@@ -51,7 +51,14 @@ namespace MyFirstMAUIApp.ViewModel
         private async Task CollectionsClicked()
         {
             // Navigate using the registered route name
-            await Shell.Current.GoToAsync("CollectionsMenu");
+            await Shell.Current.GoToAsync(nameof(CollectionsMenu));
+        }
+
+        [RelayCommand]
+        private async Task ControlsClicked()
+        {
+            // Navigate using the registered route name
+            await Shell.Current.GoToAsync(nameof(ControlsMenu));
         }
 
         public MainViewModel()

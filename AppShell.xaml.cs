@@ -1,5 +1,6 @@
 ﻿using MyFirstMAUIApp.View;
 using MyFirstMAUIApp.ViewModel;
+using ControlsMenu = MyFirstMAUIApp.View.ControlsMenu;
 
 namespace MyFirstMAUIApp
 {
@@ -23,10 +24,12 @@ namespace MyFirstMAUIApp
             Routing.RegisterRoute(nameof(ImagesPage), typeof(ImagesPage));
             Routing.RegisterRoute(nameof(ImagesURIPage), typeof(ImagesURIPage));
             Routing.RegisterRoute(nameof(ImagesEmbeddedPage), typeof(ImagesEmbeddedPage));
-            //Collections
-            Routing.RegisterRoute("CollectionsMenu", typeof(MyFirstMAUIApp.View.CollectionsMenu));
-            Routing.RegisterRoute("Collection", typeof(MyFirstMAUIApp.View.CollectionGOGwImagesPage));
 
+            //Controls
+            Routing.RegisterRoute(nameof(ControlsMenu), typeof(ControlsMenu));
+            Routing.RegisterRoute(nameof(ControlsMainSliderMenu), typeof(ControlsMainSliderMenu));
+            Routing.RegisterRoute(nameof(ControlsSliderMenu), typeof(ControlsSliderMenu));
+            Routing.RegisterRoute(nameof(ControlsVMSliderMenu), typeof(ControlsVMSliderMenu));
         }
     }
 }

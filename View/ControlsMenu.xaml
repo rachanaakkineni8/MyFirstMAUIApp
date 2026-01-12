@@ -4,32 +4,60 @@
              x:Class="MyFirstMAUIApp.View.ControlsMenu"
              Title="{Binding Title}">
 
-    <Grid Padding="16,24,16,16"
-          RowSpacing="6"
-          ColumnSpacing="12">
+    <Grid Padding="16, 24, 16, 16"
+      RowSpacing="6"
+      ColumnSpacing="12">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <Grid.ColumnDefinitons>
-            <ColumnDefintion Width = "*" />
-            <ColumnDefinition Width=" *" />
-        </Grid.ColumnDefinitons>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
 
         <Button Grid.Row="0"
                 Grid.Column="0"
                 Text="{Binding Slider}"
                 Style="{StaticResource TileButton}"
-                Command="{Binding SliderClickedCommand}"/>
+                Command="{Binding SliderClickedCommand}" />
 
         <Button Grid.Row="0"
-        Grid.Column="1"
-        Text="{Binding Slider}"
-        Style="{StaticResource TileButton}"
-        Command="{Binding SliderClickedCommand}"/>
-        
+                Grid.Column="1"
+                Text="{Binding Stepper}"
+                Style="{StaticResource TileButton}"
+                Command="{Binding StepperClickedCommand}" />
+
+        <Button Grid.Row="1"
+                Grid.Column="0"
+                Text="{Binding NotSwitch}"
+                Style="{StaticResource TileButton}"
+                Command="{Binding SwitchClickedCommand}" />
+
+        <Button Grid.Row="1"
+                Grid.Column="1"
+                Text="{Binding Entry}"
+                Style="{StaticResource TileButton}"
+                Command="{Binding EntryClickedCommand}" />
+
+        <Button Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Text="{Binding Picker}"
+                Style="{StaticResource TileButton}"
+                Command="{Binding PickerClickedCommand}" />
+
+        <Button Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Text="{Binding DateAndTimePicker}"
+                Style="{StaticResource TileButton}"
+                Command="{Binding DateAndTimePickerClickedCommand}" />
+
     </Grid>
+
 </ContentPage>

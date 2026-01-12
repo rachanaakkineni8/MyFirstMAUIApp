@@ -43,17 +43,19 @@ namespace MyFirstMAUIApp.ViewModel
         private async Task Refresh()
         {
             if (IsBusy) return;
-            isBusy = true; 
-            
+            isBusy = true;
+
             await Task.Delay(2000); // Simulate a data fetch delay
             var movies = MovieDataStore.GetMarvelMovies();
             MovieCollection.Clear();
 
             foreach (var mov in MarvelMoviesModel.GetMovies())
-                {
-                 MovieCollection.Add(mov);
-                
-            });
+            {
+                MovieCollection.Add(mov);
+
+            }
+        }
+            );
                 isBusy = false;
             
         }

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:MyFirstMAUIApp.ViewModels"
+             x:Class="MyFirstMAUIApp.View.ControlsVMSliderMenu"
+             Title="{Binding Title}"
+             x:DataType="vm:ControlsVMSliderViewModel">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <BoxView x:Name="MyBox" Color="Blue"
+                 HeightRequest="25" HorizontalOptions="Fill"
+                 Opacity="{Binding Opacity}" />
+
+        <Slider x:Name="MySlider"
+                Minimum="0" Maximum="1"
+                Value="{Binding Slider, Mode=TwoWay}"
+                ThumbColor="Blue" MaximumTrackColor="BlueViolet" MinimumTrackColor="DarkOrange"
+                HorizontalOptions="Fill" />
+
+        <Label x:Name="ValueLabel"
+               FontAttributes="Bold" FontSize="Medium" TextColor="Blue"
+               HorizontalOptions="Center"
+               Text="{Binding Slider, StringFormat='{}{0:P0}'}" />
+
+        <Label x:Name="InfoLabel"
+               Text="Moving Slider Will Change Opacity"
+               FontAttributes="Bold" FontSize="Medium" TextColor="Blue"
+               HorizontalOptions="Center"/>
+
+        <Button Text="Set to 50%"
+                Command="{Binding SetToHalfCommand}"
+                HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>
