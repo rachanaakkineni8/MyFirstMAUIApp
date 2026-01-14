@@ -1,5 +1,6 @@
 using Microsoft.Maui.Controls;
-using MyFirstMAUIApp.ViewModels;
+using MyFirstMAUIApp.ViewModel;
+
 namespace MyFirstMAUIApp.View;
 
 public partial class ControlsVMSliderMenu : ContentPage

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.Maui.Controls;
 using Microsoft.Maui.ApplicationModel;
 
-namespace MyFirstMAUIApp.ViewModels
+namespace MyFirstMAUIApp.ViewModel
 {
     public partial class ImagesActivityIndicatorViewModel : ObservableObject
     {

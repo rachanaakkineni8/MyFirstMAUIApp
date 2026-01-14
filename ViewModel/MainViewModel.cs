@@ -15,6 +15,7 @@ namespace MyFirstMAUIApp.ViewModel
     public partial class MainViewModel : ObservableObject
     {
 
+
         //public string Layouts { get; set; } = TitleMain.Layouts;
 
         //Button Commands
@@ -28,11 +29,12 @@ namespace MyFirstMAUIApp.ViewModel
         private string collections = TitleMain.Collections;
 
         [ObservableProperty]
-        private string sqlite = TitleMain.SQLlite;
-
-        [ObservableProperty]
         private string controls = TitleMain.Controls;
 
+        [ObservableProperty]
+        private string sqlite = TitleMain.SQLlite;
+
+     
 
         [RelayCommand]
         private async Task LayoutsClicked()
@@ -57,7 +59,6 @@ namespace MyFirstMAUIApp.ViewModel
         [RelayCommand]
         private async Task ControlsClicked()
         {
-            // Navigate using the registered route name
             await Shell.Current.GoToAsync(nameof(ControlsMenu));
         }
 

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyFirstMAUIApp.ViewModel
+namespace MyFirstMAUIApp.Models.Titles
 {
-    internal class ControlsSliderViewModel
+    class TitleControlsStepperXaml
     {
     }
 }

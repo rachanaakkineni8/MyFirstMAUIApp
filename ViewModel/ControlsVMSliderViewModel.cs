@@ -5,7 +5,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.Maui.Controls;
 using MyFirstMAUIApp.Models.Titles;
 
-namespace MyFirstMAUIApp.ViewModels
+namespace MyFirstMAUIApp.ViewModel
 {
     public partial class ControlsVMSliderViewModel : ObservableObject
     {

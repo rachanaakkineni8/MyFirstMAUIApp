@@ -35,7 +35,6 @@ namespace MyFirstMAUIApp.ViewModel
         [RelayCommand]
         private async Task ActivityIndicatorClicked()
         {
-          
         }
     }
 }

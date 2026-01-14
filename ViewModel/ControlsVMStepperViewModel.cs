@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyFirstMAUIApp.ViewModel
 {
-    internal class ControlsSliderViewModel
+    class ControlsVMStepperViewModel
     {
     }
 }

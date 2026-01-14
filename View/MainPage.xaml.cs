@@ -4,9 +4,11 @@ namespace MyFirstMAUIApp.View;
 
 public partial class MainPage : ContentPage
 {
-	public MainPage()
-	{
-		InitializeComponent();
-		BindingContext = new MainViewModel();
-	}
+    public MainPage()
+    {
+        InitializeComponent();
+        BindingContext = new MainViewModel();
+    }
+
+   
 }

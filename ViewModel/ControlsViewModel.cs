@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;   
 using static MyFirstMAUIApp.View.ControlsMainSliderMenu;
 
-namespace MyFirstMAUIApp.ViewModels
+namespace MyFirstMAUIApp.ViewModel
 {
     public partial class ControlsViewModel : ObservableObject
     {
@@ -32,11 +32,16 @@ namespace MyFirstMAUIApp.ViewModels
         private string dateAndTimePicker = TitleControls.DateAndTimePicker;
 
         [RelayCommand]
-        private async Task SliderClicked()
+        public async Task SliderClicked()
         {
             await Shell.Current.GoToAsync(nameof(ControlsMainSliderMenu));
         }
 
+        [RelayCommand]
+        public async Task StepperClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(ControlsMainStepperMenu));
+        }
         public ControlsViewModel()
         {
 

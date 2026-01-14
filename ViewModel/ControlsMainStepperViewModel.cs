@@ -1,34 +1,37 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using MyFirstMAUIApp.Models.Titles;
-using Microsoft.Maui.Controls;
-using System.Threading.Tasks;
 using MyFirstMAUIApp.View;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace MyFirstMAUIApp.ViewModel
 {
-    public partial class ControlsMainSliderViewModel : ObservableObject
+    public partial class ControlsMainStepperViewModel : ObservableObject
     {
         [ObservableProperty]
-        private string xAML = TitleControlsMainSlider.XAML;
+        private string xAML = TitleControlsStepper.XAML;
 
         [ObservableProperty]
         private string vM = TitleControlsMainSlider.VM;
 
-        public ControlsMainSliderViewModel()
+        public ControlsMainStepperViewModel()
         {
         }
 
         [RelayCommand]
         private async Task XAMLClicked()
         {
-            await Shell.Current.GoToAsync(nameof(ControlsSliderMenu));
+            await Shell.Current.GoToAsync(nameof(ControlsStepperMenu));
         }
 
         [RelayCommand]
         private async Task VMClicked()
         {
-            await Shell.Current.GoToAsync(nameof(ControlsVMSliderMenu));
+            await Shell.Current.GoToAsync(nameof(ControlsVMStepperMenu));
         }
     }
 }

@@ -30,6 +30,10 @@ namespace MyFirstMAUIApp
             Routing.RegisterRoute(nameof(ControlsMainSliderMenu), typeof(ControlsMainSliderMenu));
             Routing.RegisterRoute(nameof(ControlsSliderMenu), typeof(ControlsSliderMenu));
             Routing.RegisterRoute(nameof(ControlsVMSliderMenu), typeof(ControlsVMSliderMenu));
+
+            Routing.RegisterRoute(nameof(ControlsMainStepperMenu), typeof(ControlsMainStepperMenu));
+            Routing.RegisterRoute(nameof(ControlsStepperMenu), typeof(ControlsStepperMenu));
+            Routing.RegisterRoute(nameof(ControlsVMStepperMenu), typeof(ControlsVMStepperMenu));
         }
     }
 }
