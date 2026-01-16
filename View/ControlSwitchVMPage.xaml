@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstMAUIApp.View.ControlSwitchVMPage"
+             Title="{Binding Title}">
+
+    <FlexLayout Direction="Column"
+                JustifyContent="Center"
+                AlignItems="Center"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill" >
+
+        <Label x:Name="label"
+               Text="Switch Example"
+               FontSize="Large"
+               TextColor="{Binding TextColor}" 
+               FontAttributes="Bold" />
+
+        <Switch x:Name="toggleSwitch"
+                IsToggled="{Binding IsToggled, Mode=TwoWay}"
+                OnColor="Green"
+                ThumbColor="Blue" />
+    </FlexLayout>
+</ContentPage>

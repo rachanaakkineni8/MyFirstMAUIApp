@@ -13,7 +13,7 @@ namespace MyFirstMAUIApp.ViewModel
     public partial class ControlsMainStepperViewModel : ObservableObject
     {
         [ObservableProperty]
-        private string xAML = TitleControlsStepper.XAML;
+        private string xAML = TitleControlsStepper.StepperXAML;
 
         [ObservableProperty]
         private string vM = TitleControlsMainSlider.VM;
