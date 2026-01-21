@@ -1,6 +1,5 @@
 ﻿using MyFirstMAUIApp.View;
 using MyFirstMAUIApp.ViewModel;
-using MyFirstMAUIApp.View;
 using ControlsMenu = MyFirstMAUIApp.View.ControlsMenu;
 using ControlSwitchesPage = MyFirstMAUIApp.View.ControlSwitchesPage;
 using ControlSwitchVMPage = MyFirstMAUIApp.View.ControlSwitchVMPage;
@@ -42,6 +41,11 @@ namespace MyFirstMAUIApp
             Routing.RegisterRoute(nameof(ControlSwitchesPage), typeof(ControlSwitchesPage));
             Routing.RegisterRoute(nameof(ControlSwitchXAMLPage), typeof(ControlSwitchXAMLPage));
             Routing.RegisterRoute(nameof(ControlSwitchVMPage), typeof(ControlSwitchVMPage));
+
+            Routing.RegisterRoute(nameof(ControlEntriesPage), typeof(ControlEntriesPage));
+            Routing.RegisterRoute(nameof(ControlEntryXAMLPage), typeof(ControlEntryXAMLPage));
+            Routing.RegisterRoute(nameof(ControlEntryVMPage), typeof(ControlEntryVMPage));
+            Routing.RegisterRoute(nameof(ControlEntryResultPage), typeof(ControlEntryResultPage));
         }
     }
 }

@@ -42,6 +42,18 @@ namespace MyFirstMAUIApp.ViewModel
         {
             await Shell.Current.GoToAsync(nameof(ControlsMainStepperMenu));
         }
+
+        [RelayCommand]
+        public async Task SwitchClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(ControlSwitchesPage));
+        }
+
+        [RelayCommand]
+        public async Task EntryClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(ControlEntriesPage));
+        }
         public ControlsViewModel()
         {
 
